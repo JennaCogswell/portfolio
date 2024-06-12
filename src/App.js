@@ -1,9 +1,13 @@
+import Header from './components/header/Header';
+import Aside from './components/aside/Aside';
+import './index.css';
 
 function App() {
   return (
-    <h1 className="text-3xl font-parisienne ">
-      Hello world!
-    </h1>
+    <>
+    <Header/>
+    <Aside/>
+    </>
   );
 }
 

@@ -6,7 +6,7 @@ module.exports = {
       'background': '#F7F7EB',
       'primary': '#414436',
       'secondary': '#48531D',
-      'accent': '975C15',
+      'accent': '#975C15',
 
     },
     extend: {

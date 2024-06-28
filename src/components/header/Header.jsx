@@ -65,38 +65,38 @@ const Header = () => {
       </header>
 
       {isOpen && (
-        <div className='mt-10 fixed w-full h-full '>
+        <div className='mt-11 fixed w-full h-full '>
           
-          <nav className='p-2 w-full h-full'>
+          <nav className='p-2 w-full h-full bg-background'>
 
             <div className=' w-full h-full'>
-              <ul className='flex-col flex h-full font-code text-primary hover:text-accent'>
-                <li className='mb-8'>
-                  <a href='#home' className='flex items-center gap-1 justify-center'>
+              <ul className='flex-col flex h-fit font-code items-center text-primary'>
+                <li className='my-4'>
+                  <a href='#home' className='flex items-center gap-1 justify-center hover:text-accent '>
                     <IoHome/> Home
                   </a>
                 </li>
 
-                <li className='mb-8' >
-                  <a href='#about' className='flex items-center gap-1 justify-center'>
+                <li className='my-4' >
+                  <a href='#about' className='flex items-center gap-1 justify-center hover:text-accent '>
                     <IoInformationCircleSharp/> About
                   </a>
                 </li>
 
-                <li className='mb-8'>
-                  <a href='#tools' className='flex items-center gap-1 justify-center'>
+                <li className='my-4'>
+                  <a href='#tools' className='flex items-center gap-1 justify-center hover:text-accent '>
                     <IoBuild/> Tools
                   </a>
                 </li>
 
-                <li className='mb-8'>
-                  <a href='#projects' className='flex items-center gap-1 justify-center'>
+                <li className='my-4'>
+                  <a href='#projects' className='flex items-center gap-1 justify-center hover:text-accent '>
                     <IoFileTrayFull/> Projects
                   </a>
                 </li>
 
-                <li className='mb-8'>
-                  <a href='#contact' className='flex items-center gap-1 justify-center'>
+                <li className='my-4'>
+                  <a href='#contact' className='flex items-center gap-1 justify-center hover:text-accent '>
                     <IoPaperPlane/> Contact
                   </a>
                 </li>

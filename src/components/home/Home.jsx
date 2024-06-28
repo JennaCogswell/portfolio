@@ -2,8 +2,8 @@ import React from 'react'
 
 const Home = () => {
   return (
-    <div className='flex h-screen'>
-      <div className='m-auto flex-col md:flex-row flex text-primary w-4/5 md:w-2/3'>
+    <div className='flex md:h-screen h-fit'>
+      <div className='m-auto mt-7 md:mt-auto flex-col md:flex-row flex text-primary w-4/5 md:w-2/3'>
         <div className='md:w-2/3 flex-grow items-center md:items-start md:text-start text-center'>
           
           <p className='font-code text-lg sm:text-xl pb-12 mt-12'>
@@ -17,7 +17,7 @@ const Home = () => {
                 I am, 
               </p>
 
-              <p className='font-parisienne text-4xl sm:text-6xl md:pr-8 flex-shrink'>
+              <p className='font-parisienne text-4xl text-accent sm:text-6xl md:pr-8 flex-shrink'>
                 Jenna Cogswell
               </p>
             </div>
@@ -36,9 +36,9 @@ const Home = () => {
           </p>
         </div>
 
-        <div className='w-fit flex-shrink m-auto'>
+        <div className='w-fit flex-shrink m-auto md:mt-6'>
           <img
-            className="max-h-64 md:max-h-72 lg:max-h-80 w-full object-cover object-center "
+            className="max-h-64 md:max-h-72 lg:max-h-64 w-full object-cover object-center "
             src="/profile.png"
             alt="profile of author"
           />

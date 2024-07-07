@@ -6,7 +6,7 @@ import { IoFileTrayFull } from "react-icons/io5";
 import { IoPaperPlane } from "react-icons/io5";
 import { IoMenu } from "react-icons/io5";
 import { useState } from 'react';
-
+import { Link } from 'react-scroll';
 
 
 
@@ -20,56 +20,62 @@ const Header = () => {
   
 
   return (
-    <div className='z-16'>
-      <header className='fixed w-full h-fit'>
-        <nav className='p-2 w-full'>
+    <div className=''>
+      <header className='fixed w-full h-14 bg-background/[0.8] '>
+        <nav className='p-2 w-full h-fit'>
           <a href='index.html' className='absolute left-3 hover:text-accent font-parisienne text-secondary text-3xl'>JC</a>
 
           <div className='hidden lg:flex justify-center items-center'>
             <ul className='flex font-code text-primary '>
               <li className='ml-4 mr-4'>
-                <a href='#home' className='flex items-center gap-1 hover:text-accent'>
+                <Link className='flex items-center px-2 gap-1 hover:text-accent' activeClass='bg-primary/[0.9] text-background rounded-full hover:text-background hover:bg-accent/[0.9]' smooth spy to='home'>
                   <IoHome/> Home
-                </a>
+                </Link>
               </li>
 
               <li className='ml-4 mr-4'>
-                <a href='#about' className='flex items-center gap-1 hover:text-accent'>
+                <Link className='flex items-center px-2 gap-1 hover:text-accent' activeClass='bg-primary/[0.9] text-background rounded-full hover:text-background hover:bg-accent/[0.9]' smooth spy to='about'>
                   <IoInformationCircleSharp/> About
-                </a>
+                </Link>
               </li>
 
               <li className='ml-4 mr-4'>
-                <a href='#tools' className='flex items-center gap-1 hover:text-accent'>
+                <Link className='flex items-center px-2 gap-1 hover:text-accent' activeClass='bg-primary/[0.9] text-background rounded-full hover:text-background hover:bg-accent/[0.9]' smooth spy to='tools'>
                   <IoBuild/> Tools
-                </a>
+                </Link>
               </li>
 
               <li className='ml-4 mr-4'>
-                <a href='#projects' className='flex items-center gap-1 hover:text-accent'>
+                <Link className='flex items-center px-2 gap-1 hover:text-accent' activeClass='bg-primary/[0.9] text-background rounded-full hover:text-background hover:bg-accent/[0.9]' smooth spy to='projects'> 
                   <IoFileTrayFull/> Projects
-                </a>
+                </Link>
               </li>
 
               <li className='ml-4 mr-3'>
-                <a href='#contact' className='flex items-center gap-1 hover:text-accent'>
+                <Link className='flex items-center px-2 gap-1 hover:text-accent' activeClass='bg-primary/[0.9] text-background rounded-full hover:text-background hover:bg-accent/[0.9]' smooth spy to='contact'>
                   <IoPaperPlane/> Contact
-                </a>
+                </Link>
               </li>
             </ul>
           </div>
         </nav>
-        <button className='text-2xl items-center lg:hidden absolute right-3 hover:text-accent text-secondary' onClick={toggleMenu}>
+        <button className='text-2xl z-30 items-center lg:hidden absolute right-3 hover:text-accent text-secondary' onClick={toggleMenu}>
           <IoMenu/>
         </button>
       </header>
 
       {isOpen && (
-        <div className='mt-11 fixed w-full h-full '>
+        <div className='fixed w-full h-screen bg-background'>
           
-          <nav className='p-2 w-full h-full bg-background'>
+          <nav className='p-2 w-full h-full '>
 
-            <div className=' w-full h-full'>
+            <a href='index.html' className='absolute left-3 hover:text-accent font-parisienne text-secondary text-3xl'>JC</a>
+
+            <button className='text-2xl mt-2 items-center lg:hidden absolute right-3 hover:text-accent text-secondary' onClick={toggleMenu}>
+              <IoMenu/>
+            </button>
+
+            <div className='mt-10 w-full h-full'>
               <ul className='flex-col flex h-fit font-code items-center text-primary'>
                 <li className='my-4'>
                   <a href='#home' className='flex items-center gap-1 justify-center hover:text-accent '>
@@ -103,6 +109,7 @@ const Header = () => {
               </ul>
             </div>
           </nav>
+          
           
         </div>
       )}

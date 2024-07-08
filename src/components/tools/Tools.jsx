@@ -4,8 +4,8 @@ import Tool from './Tool'
 const Tools = () => {
 
   const toolsList = [
-    "React", "React Native", "Next.js", "Tailwind CSS", "Microsoft Azure", "AWS", "MySQL", "MongoDB", "GitHub", "Jupyter Notebook", "Android Studio"
-, "Firebase", "Figma"  ]
+    "JavaScript", "HTML5", "CSS3", "Java", "Kotlin", "Python", "C++/C", "Terraform", "React", "React Native", "Node.js", "Express.js", "Next.js", "Tailwind CSS", "Microsoft Azure", "AWS", "Docker", "MySQL", "MongoDB", "Powershell", "GitHub", "Jupyter Notebook", "Android Studio"
+, "Firebase", "Figma" ]
 
   
 

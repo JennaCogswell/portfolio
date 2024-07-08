@@ -13,9 +13,9 @@ const Home = () => {
           <div className='flex flex-col w-fit m-auto md:m-0 pb-12'>
 
             <div className='flex'>
-              <p className='font-code text-lg sm:text-xl pr-5 pt-5'>
+              {/* <p className='font-code text-lg sm:text-xl pr-5 pt-5'>
                 I am, 
-              </p>
+              </p> */}
 
               <p className='font-parisienne text-4xl text-accent sm:text-6xl md:pr-8 flex-shrink'>
                 Jenna Cogswell

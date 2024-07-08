@@ -23,7 +23,7 @@ const Header = () => {
     <div className=''>
       <header className='fixed w-full h-14 bg-background/[0.8] '>
         <nav className='p-2 w-full h-fit'>
-          <a href='index.html' className='absolute left-3 hover:text-accent font-parisienne text-secondary text-3xl'>JC</a>
+          <Link className='absolute left-3 hover:text-accent font-parisienne text-secondary text-3xl' smooth spy to='home'>JC</Link>
 
           <div className='hidden lg:flex justify-center items-center'>
             <ul className='flex font-code text-primary '>
@@ -65,11 +65,11 @@ const Header = () => {
       </header>
 
       {isOpen && (
-        <div className='fixed w-full h-screen bg-background'>
+        <div className='fixed w-full h-screen bg-background z-20'>
           
           <nav className='p-2 w-full h-full '>
 
-            <a href='index.html' className='absolute left-3 hover:text-accent font-parisienne text-secondary text-3xl'>JC</a>
+            <Link className='absolute left-3 hover:text-accent font-parisienne text-secondary text-3xl' smooth spy to='home'>JC</Link>
 
             <button className='text-2xl mt-2 items-center lg:hidden absolute right-3 hover:text-accent text-secondary' onClick={toggleMenu}>
               <IoMenu/>
@@ -78,33 +78,33 @@ const Header = () => {
             <div className='mt-10 w-full h-full'>
               <ul className='flex-col flex h-fit font-code items-center text-primary'>
                 <li className='my-4'>
-                  <a href='#home' className='flex items-center gap-1 justify-center hover:text-accent '>
+                  <Link onClick={toggleMenu} className='flex items-center px-2 gap-1 justify-center hover:text-accent ' activeClass='bg-primary/[0.9] text-background rounded-full hover:text-background hover:bg-accent/[0.9]' smooth spy to='home'>
                     <IoHome/> Home
-                  </a>
+                  </Link>
                 </li>
 
                 <li className='my-4' >
-                  <a href='#about' className='flex items-center gap-1 justify-center hover:text-accent '>
+                  <Link onClick={toggleMenu} className='flex items-center px-2 gap-1 justify-center hover:text-accent ' activeClass='bg-primary/[0.9] text-background rounded-full hover:text-background hover:bg-accent/[0.9]' smooth spy to='about'>
                     <IoInformationCircleSharp/> About
-                  </a>
+                  </Link>
                 </li>
 
                 <li className='my-4'>
-                  <a href='#tools' className='flex items-center gap-1 justify-center hover:text-accent '>
+                  <Link onClick={toggleMenu} className='flex items-center px-2 gap-1 justify-center hover:text-accent ' activeClass='bg-primary/[0.9] text-background rounded-full hover:text-background hover:bg-accent/[0.9]' smooth spy to='tools'>
                     <IoBuild/> Tools
-                  </a>
+                  </Link>
                 </li>
 
                 <li className='my-4'>
-                  <a href='#projects' className='flex items-center gap-1 justify-center hover:text-accent '>
+                  <Link onClick={toggleMenu} className='flex items-center gap-1 px-2 justify-center hover:text-accent ' activeClass='bg-primary/[0.9] text-background rounded-full hover:text-background hover:bg-accent/[0.9]' smooth spy to='projects'> 
                     <IoFileTrayFull/> Projects
-                  </a>
+                  </Link>
                 </li>
 
                 <li className='my-4'>
-                  <a href='#contact' className='flex items-center gap-1 justify-center hover:text-accent '>
+                  <Link onClick={toggleMenu} className='flex items-center gap-1 px-2 justify-center hover:text-accent ' activeClass='bg-primary/[0.9] text-background rounded-full hover:text-background hover:bg-accent/[0.9]' smooth spy to='contact'>
                     <IoPaperPlane/> Contact
-                  </a>
+                  </Link>
                 </li>
               </ul>
             </div>

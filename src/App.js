@@ -5,7 +5,7 @@ import About from './components/about/About';
 import './index.css';
 import Contact from './components/contact/Contact';
 import Tools from './components/tools/Tools';
-import Projects from './components/projects/Projecta';
+import Projects from './components/projects/Projects';
 
 function App() {
   return (

@@ -13,7 +13,7 @@ const Contact = () => {
   };
 
   return (
-    <div id='contact' className='h-fit md:h-screen flex flex-col items-center'>
+    <div id='contact' className='h-fit py-10 md:h-[900px] md:max-h-screen flex flex-col items-center'>
       <div className='my-10 items-center flex flex-col md:flex-row gap-4 md:gap-0 justify-between text-primary basis-11/12 w-4/5'>
         <button onClick={() => openNewTab('https://www.linkedin.com/in/jenna-cogswell-1608771b7/')} className='flex flex-col hover:text-accent items-center' ><IoLogoLinkedin className='text-6xl md:text-7xl lg:text-9xl'/><p className='font-code text-md'>LinkedIn/jennacogswell</p></button>
         <button onClick={() => openNewTab('https://github.com/JennaCogswell')} className='flex flex-col items-center hover:text-accent '><IoLogoGithub className='text-6xl md:text-7xl lg:text-9xl'/><p className='font-code text-md'>GitHub/jennacogswell</p></button>

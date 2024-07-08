@@ -10,7 +10,7 @@ const Tools = () => {
   
 
   return (
-    <div id='tools' className='flex h-screen'>
+    <div id='tools' className='flex py-10 md:h-[900px] h-fit md:max-h-screen'>
       <div className='m-auto w-3/5'>
         <div className='flex flex-wrap gap-3 items-center justify-center'>
           {toolsList.map((tool) => <Tool tool={tool}/>)}

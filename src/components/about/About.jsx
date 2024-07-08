@@ -21,7 +21,7 @@ const About = () => {
         </p>
 
         <p className='w-4/5'>
-          My current areas of interest include <span className='text-accent'>Web & Mobile Development, User Experience & Design, and Cloud Computing.</span>
+          My current areas of interest include <span className='text-accent'>Web & Mobile Development, User Experience & Design, Machine Learning, and Cloud Computing.</span>
         </p>
       </div>
     </div>

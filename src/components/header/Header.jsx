@@ -59,7 +59,7 @@ const Header = () => {
             </ul>
           </div>
         </nav>
-        <button className='text-2xl z-30 items-center lg:hidden absolute right-3 hover:text-accent text-secondary' onClick={toggleMenu}>
+        <button className='text-3xl z-30 items-center lg:hidden absolute right-3 hover:text-accent text-secondary' onClick={toggleMenu}>
           <IoMenu/>
         </button>
       </header>
@@ -71,7 +71,7 @@ const Header = () => {
 
             <Link className='absolute left-3 hover:text-accent font-parisienne text-secondary text-3xl' smooth spy to='home'>JC</Link>
 
-            <button className='text-2xl mt-2 items-center lg:hidden absolute right-3 hover:text-accent text-secondary' onClick={toggleMenu}>
+            <button className='text-3xl mt-2 items-center lg:hidden absolute right-3 hover:text-accent text-secondary' onClick={toggleMenu}>
               <IoMenu/>
             </button>
 

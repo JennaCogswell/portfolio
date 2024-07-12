@@ -5,9 +5,12 @@ const ProjectCard = ({title, description, imagePath, techStack, githubLink, proj
   
 
   return (
-    <div className='h-fit w-fit border-2 shrink-0 md:text-lg border-primary rounded-full px-3 bg-primary/[0.9] shadow-inner shadow-background/40 text-background font-code hover:border-[#BF761C]'>
-      {title}
+    <div className='min-h-fit min-w-fit h-[500px] md:h-full w-[335px] md:w-[600px] lg:w-[800px] xl:w-[1000px] shrink-0 p-5 snap-center'>
+      <div className='w-full h-full rounded-[40px] p-4 bg-secondary/10 shadow-inner drop-shadow-lg shadow-accent/40 text-primary font-code'>
+        {title}
+      </div>
     </div>
+    
   )
 }
 

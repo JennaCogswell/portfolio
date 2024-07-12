@@ -59,7 +59,7 @@ const Projects = () => {
 
   return (
     <div id='projects' className='flex md:h-[900px] h-fit md:max-h-screen'>
-      <div class='w-full m-auto flex flex-row overflow-x-scroll scrollbar-hide'>
+      <div class='w-full h-5/6 m-auto flex flex-row overflow-x-scroll overflow-visible snap-x snap-mandatory md:px-48'>
         {projects.map((project) => <ProjectCard title={project.title} description={project.description} imagePath={project.imagePath} techStack={project.techStack} githubLink={project.githubLink} projectLink={project.projectLink}/>)}
       </div>
       

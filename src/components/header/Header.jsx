@@ -21,7 +21,7 @@ const Header = () => {
 
   return (
     <div className=''>
-      <header className='fixed w-full h-14 bg-background/[0.8] '>
+      <header className='fixed w-full h-14 bg-background/[0.8] z-30'>
         <nav className='p-2 w-full h-fit'>
           <Link className='absolute left-3 hover:text-accent font-parisienne text-secondary text-3xl' smooth spy to='home'>JC</Link>
 

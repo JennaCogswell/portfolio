@@ -44,7 +44,7 @@ const ProjectCard = ({title, description, imagePath, techStack, githubLink}) => 
           </div>
         </div>
 
-        <div className='flex items-center justify-center md:items-start md:justify-start w-full md:w-1/3 lg:w-2/5 p-1'>
+        <div className='flex items-center justify-center md:items-start md:justify-start w-full md:w-1/3 lg:w-2/5 px-1 py-2'>
           <div className='w-full flex items-center justify-center'>
             <img
               className="inset-0 object-cover rounded-2xl"

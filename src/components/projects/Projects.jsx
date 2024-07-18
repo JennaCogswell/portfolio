@@ -68,14 +68,14 @@ const Projects = () => {
 
   return (
     <div id='projects' className='relative flex md:h-[900px] h-fit md:max-h-screen'>
-      <IoArrowBackCircleOutline className='absolute left-1 md:left-14 top-1/2 transform -translate-y-1/2 cursor-pointer text-4xl z-10 text-secondary hover:text-accent'
+      <IoArrowBackCircleOutline className='absolute left-1 md:left-14 top-1/2 transform -translate-y-1/2 cursor-pointer text-4xl z-10  text-accent'
         onClick={() => scroll('left')}/>
 
       <div ref={scrollContainerRef} class='w-full h-5/6 m-auto flex flex-row overflow-x-scroll overflow-visible snap-x snap-mandatory md:px-48'>
         {projects.map((project) => <ProjectCard title={project.title} description={project.description} imagePath={project.imagePath} techStack={project.techStack} githubLink={project.githubLink}/>)}
       </div>
 
-      <IoArrowForwardCircleOutline className='absolute right-1 md:right-14 top-1/2 transform -translate-y-1/2 cursor-pointer text-4xl z-10 text-secondary hover:text-accent'
+      <IoArrowForwardCircleOutline className='absolute right-1 md:right-14 top-1/2 transform -translate-y-1/2 cursor-pointer text-4xl z-10 text-accent'
         onClick={() => scroll('right')}/>
 
       

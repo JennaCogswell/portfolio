@@ -3,7 +3,7 @@ import React from 'react'
 const Tech= ({tech}) => {
 
   return (
-    <div className='h-fit w-fit border-2 text-sm border-primary rounded-full px-3 bg-primary/[0.9] shadow-inner shadow-background/40 text-background font-code hover:border-[#BF761C]'>
+    <div className='h-fit w-fit border-2 text-sm border-primary rounded-full px-3 bg-primary/[0.9] shadow-inner shadow-background/40 text-background font-code '>
       {tech}
     </div>
   )
@@ -27,8 +27,8 @@ const ProjectCard = ({title, description, imagePath, techStack, githubLink}) => 
           </div>
 
           <div className='px-2 py-1 justify-center items-center md:items-start md:justify-start'>
-            <div className='h-fit text-sm w-fit border-2 border-accent rounded-full px-3 bg-primary/[0.9] shadow-inner shadow-background/40 text-background font-code'>
-              <button onClick={() => openNewTab(githubLink)} className='hover:text-accent'>GitHub Repo</button>
+            <div className='h-fit text-sm w-fit border-2 border-accent bg-accent rounded-full px-3 hover:shadow shadow-inner shadow-background/40 text-background font-code'>
+              <button onClick={() => openNewTab(githubLink)} className=''>GitHub Repo</button>
             </div>
           </div>
 

@@ -1,7 +1,9 @@
 import React, { useRef } from 'react'
 import ProjectCard from './ProjectCard';
-import { IoArrowBackCircleOutline } from "react-icons/io5";
-import { IoArrowForwardCircleOutline } from "react-icons/io5";
+import { IoArrowBackCircle } from "react-icons/io5";
+import { IoArrowForwardCircle } from "react-icons/io5";
+
+
 
 
 
@@ -68,14 +70,14 @@ const Projects = () => {
 
   return (
     <div id='projects' className='relative flex md:h-[900px] h-fit md:max-h-screen'>
-      <IoArrowBackCircleOutline className='absolute left-1 md:left-14 top-1/2 transform -translate-y-1/2 cursor-pointer text-4xl z-10  text-accent'
+      <IoArrowBackCircle className='absolute left-2 md:left-14 top-1/2 transform -translate-y-1/2 cursor-pointer text-4xl z-10  text-accent/90 hover:text-accent'
         onClick={() => scroll('left')}/>
 
       <div ref={scrollContainerRef} class='w-full h-5/6 m-auto flex flex-row overflow-x-scroll overflow-visible snap-x snap-mandatory md:px-48'>
         {projects.map((project) => <ProjectCard title={project.title} description={project.description} imagePath={project.imagePath} techStack={project.techStack} githubLink={project.githubLink}/>)}
       </div>
 
-      <IoArrowForwardCircleOutline className='absolute right-1 md:right-14 top-1/2 transform -translate-y-1/2 cursor-pointer text-4xl z-10 text-accent'
+      <IoArrowForwardCircle className='absolute right-2 md:right-14 top-1/2 transform -translate-y-1/2 cursor-pointer text-4xl z-10 text-accent/90 hover:text-accent'
         onClick={() => scroll('right')}/>
 
       

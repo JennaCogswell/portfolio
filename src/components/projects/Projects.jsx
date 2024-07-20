@@ -15,14 +15,14 @@ const Projects = () => {
   const projects = [
     {
       "title": "The Grapevine Chronicles",
-      "description": "A React and Next.js web application for users to sign up, log in, browse, create, and interact with posts such as short stories, blog posts, and articles. The application is built and hosted using AWS services such as Elastic Container Registry + Service, RDS, S3, Amazon Polly, and more. This was a solo course project for Cloud Computing which recieved a 15/15.",
+      "description": "A React and Next.js web application for users to sign up, log in, browse, create, and interact with posts such as short stories, blog posts, and articles. The application was built and hosted using AWS services such as Elastic Container Registry + Service, RDS, S3, Amazon Polly, and more. This was a solo course project for Cloud Computing which recieved a 15/15.",
       "imagePath": "/grapevinechronicles.png",
       "techStack": ["JavaScript (jsx)", "HTML5", "CSS3", "SQL", "React", "Next.js/NextAuth", "TailwindCSS", "Docker", "AWS VPC", "AWS ECR", "AWS ECS", "AWS CloudFront", "AWS EC2", "AWS RDS (MySQL)", "AWS S3", "AWS Secrets Manager", "Amazon Polly"],
       "githubLink": "https://github.com/JennaCogswell/CloudComputingProject",
     },
     {
       "title": "Culinary Explorer",
-      "description": "A React and Next.js web application hosted on Vercel, for users to sign up, log in, post, search, and interect with recipe posts. This application used MongoDB Atlas/Mongoose for storing and retrieving user and post information. This was a six person group project for a Web Development course which recieved a 91%.",
+      "description": "A React and Next.js web application hosted on Vercel, for users to sign up, log in, post, search, and interect with recipe posts. This application used MongoDB Atlas + Mongoose for storing and retrieving user and post information. This was a six person group project for a Web Development course which recieved a 91%.",
       "imagePath": "/culinaryexplorer.png",
       "techStack": ["JavaScript (jsx)", "HTML5", "CSS3", "React", "Next.js/NextAuth", "Vercel", "TailwindCSS", "MongoDB Atlas", "Figma"],
       "githubLink": "https://github.com/JennaCogswell/CulinaryExplorer",
@@ -43,7 +43,7 @@ const Projects = () => {
     },
     {
       "title": "Notes App",
-      "description": "A React Native application created using Expo, to create, search, edit, and delete notes with a title and a body. Notes are saved and updated locally using Redux Tollkit and RTK Query. This project was done solo, instructed by Shiftkey Academy Up, resulting in a Shiftkey Labs React Native Certification.",
+      "description": "A React Native application created using Expo, to create, search, edit, and delete notes with a title and a body. Notes are saved and updated locally using Redux Toolkit and RTK Query. This project was done solo, instructed by Shiftkey Academy Up, resulting in a Shiftkey Labs React Native Certification.",
       "imagePath": "/notesapp.png",
       "techStack": ["JavaScript (jsx)", "HTML5", "CSS3", "TailwindCSS", "React Native", "Redux Toolkit", "RTK Query", "Expo"],
       "githubLink": "https://github.com/JennaCogswell/SKNotesApp",

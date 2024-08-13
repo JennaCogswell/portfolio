@@ -30,7 +30,7 @@ const Home = () => {
           </p>
         </div>
 
-        <div className='flex items-center justify-center md:items-start md:justify-start w-4/5 md:w-2/5 lg:w-3/12'>
+        <div className='flex items-center justify-center md:items-start md:justify-start w-3/5 sm:w-4/5 md:w-2/5 lg:w-3/12'>
           <div className='w-full flex items-center justify-center'>
             <img
               className="inset-0 object-cover"

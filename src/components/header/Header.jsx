@@ -23,6 +23,7 @@ const Header = () => {
 
   return (
     <div className=''>
+      {(!isOpen) && (
       <header className='fixed w-full h-14 bg-background/[0.8] z-30'>
         <nav className='p-2 w-full h-fit'>
           <Link className='absolute left-3 hover:text-accent font-parisienne text-secondary text-3xl' smooth spy to='home'>JC</Link>
@@ -64,7 +65,7 @@ const Header = () => {
         <button className='text-3xl z-30 items-center lg:hidden absolute right-3 hover:text-accent text-secondary' onClick={toggleMenu}>
           <IoMenu/>
         </button>
-      </header>
+      </header> )}
 
       {isOpen && (
         <div className='fixed w-full h-screen bg-background z-20'>

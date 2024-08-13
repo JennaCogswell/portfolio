@@ -26,7 +26,7 @@ const Home = () => {
           </p>
 
           <p className='font-code text-lg sm:text-xl pb-14 md:pr-8'>
-          Full-Stack Developer, Dalhousie University Bachelor’s of Computer Science graduate 2024.
+          Analyst, Full-Stack Developer at Avanade, Dalhousie University Bachelor’s of Computer Science.
           </p>
         </div>
 

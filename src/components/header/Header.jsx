@@ -7,6 +7,8 @@ import { IoPaperPlane } from "react-icons/io5";
 import { IoMenu } from "react-icons/io5";
 import { useState } from 'react';
 import { Link } from 'react-scroll';
+import { IoMdClose } from "react-icons/io";
+
 
 
 
@@ -72,7 +74,7 @@ const Header = () => {
             <Link className='absolute left-3 hover:text-accent font-parisienne text-secondary text-3xl' smooth spy to='home'>JC</Link>
 
             <button className='text-3xl mt-2 items-center lg:hidden absolute right-3 hover:text-accent text-secondary' onClick={toggleMenu}>
-              <IoMenu/>
+              <IoMdClose />
             </button>
 
             <div className='mt-10 w-full h-full'>
